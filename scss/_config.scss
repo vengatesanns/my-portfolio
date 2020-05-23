@@ -1,0 +1,8 @@
+// Color Declaration
+$Primary_color: #444;
+$secondary_color: #eece1a;
+
+// Transitions
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
