@@ -1,11 +1,12 @@
 @import "config";
+@import "menu";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: $Primary_color;
+  background: $primary_color;
   color: #fff;
   height: 100%;
   margin: 0;
