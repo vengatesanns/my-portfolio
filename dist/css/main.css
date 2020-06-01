@@ -11,6 +11,16 @@
   .menu-btn.close {
     transform: rotate(180deg); }
 
+.other-btn {
+  position: absolute;
+  top: 35px;
+  right: 90px;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .other-btn i:hover {
+    color: #eece1a;
+    transition: all 0.5s ease-out; }
+
 #bar {
   display: inline; }
 
@@ -86,6 +96,36 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+.pop-over {
+  position: absolute;
+  top: 85px;
+  right: 90px;
+  background: #eece1a;
+  border-radius: 6px;
+  padding: 25px 0px 50px 1px;
+  overflow: hidden; }
+  .pop-over.show {
+    width: 7rem;
+    height: 5.8rem;
+    display: grid;
+    grid-template-columns: 3rem 3rem;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .pop-over.close {
+    display: none; }
+  .pop-over i {
+    cursor: pointer;
+    font-size: 2.5rem; }
+    .pop-over i:hover {
+      text-shadow: 2px 4px 6px #444; }
+  .pop-over .dark {
+    color: #444; }
+  .pop-over .light {
+    color: #FFFFFF; }
 
 @media screen and (max-width: 768px) {
   main {

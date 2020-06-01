@@ -1,6 +1,13 @@
 // Color Declaration
-$primary_color: #444;
-$secondary_color: #eece1a;
+$primary-color: #444;
+$secondary-color: #eece1a;
+
+// color palette
+$dark-mode: #000000;
+$light-mode:  #FFFFFF;
+$blue-mode:  #003CFF;
+$dragon-dark-mode:  #444;
+
 
 // Transitions
 @mixin easeOut {
@@ -31,3 +38,4 @@ $secondary_color: #eece1a;
     @content;
   }
 }
+

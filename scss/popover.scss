@@ -1,0 +1,46 @@
+// Pop Over
+.pop-over {
+    position: absolute;
+    top: 85px;
+    right: 90px;
+    background: $secondary-color;
+    border-radius: 6px;
+    padding: 25px 0px 50px 1px;
+    overflow: hidden;
+    //@include easeOut;
+
+    &.show {
+    width: 7rem;
+    height: 5.8rem;
+    display: grid;
+    grid-template-columns: 3rem 3rem;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    &.close {
+      display: none;
+    }
+
+    i {
+      cursor: pointer;   
+      font-size: 2.5rem;
+
+      &:hover {
+        text-shadow: 2px 4px 6px $primary-color;
+      }
+      
+    }
+
+    // Colors
+    .dark {
+      color: $dragon-dark-mode;
+    }
+
+    .light {
+      color: $light-mode;
+    }
+}

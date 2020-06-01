@@ -9,7 +9,7 @@
 
   i {
     &:hover {
-      color: $secondary_color;
+      color: $secondary-color;
       @include easeOut;
     }
   }
@@ -17,6 +17,22 @@
   // rotate menu icons
   &.close {
     transform: rotate(180deg);
+  }
+}
+
+// Other menu Button
+.other-btn {
+  position: absolute;
+  top: 35px;
+  right: 90px;
+  cursor: pointer;
+  @include easeOut;
+
+  i {
+    &:hover {
+      color: $secondary-color;
+      @include easeOut;
+    }
   }
 }
 
@@ -56,7 +72,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($color: $primary_color, $amount: 5);
+    background: darken($color: $primary-color, $amount: 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -68,7 +84,7 @@
 
   // Branding
   &-branding {
-    background: $primary_color;
+    background: $primary-color;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -81,7 +97,7 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px $secondary_color;
+      border: solid 3px $secondary-color;
     }
   }
 
@@ -95,7 +111,7 @@
     }
 
     &.current > a {
-      color: $secondary_color;
+      color: $secondary-color;
     }
   }
 
@@ -111,7 +127,7 @@
     @include easeOut;
 
     &:hover {
-      color: $secondary_color;
+      color: $secondary-color;
     }
   }
 }
@@ -122,3 +138,6 @@
     transition-delay: $x * 0.1s;
   }
 }
+
+
+
