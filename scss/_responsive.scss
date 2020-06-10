@@ -52,6 +52,16 @@
       text-align: center;
     }
   }
+
+  .about-info {
+    grid-template-areas: 
+    'bioImage'
+    'bio'
+    'job1'
+    'job2';
+    grid-template-columns: 1fr;
+  }
+
 }
 
 // Mobile Screens
